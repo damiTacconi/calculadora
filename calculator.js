@@ -28,7 +28,6 @@ function calc(value) {
   ) {
     r.value = value;
   } else {
-    console.log(r.value);
     if (
       (!isValidLastNumber() && !Number.isInteger(Number(value))) ||
       (!isValidLastNumber() && value == 0)
