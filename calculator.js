@@ -28,11 +28,7 @@ function calc(value) {
   ) {
     r.value = value;
   } else {
-    if (
-      (!isValidLastNumber() && !Number.isInteger(Number(value))) ||
-      (!isValidLastNumber() && value == 0)
-    )
-      return;
+    if (!isValidLastNumber() && !Number.isInteger(Number(value))) return;
     else r.value += value;
   }
 }
