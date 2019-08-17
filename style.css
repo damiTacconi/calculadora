@@ -36,9 +36,9 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas:
-    "b7 b8 b1 bs"
+    "b7 b8 b9 bs"
     "b4 b5 b6 br"
-    "b9 b2 b3 bm"
+    "b1 b2 b3 bm"
     "bac b0 bD bd"
     "bi bi bi bi";
   grid-gap: 5px;
