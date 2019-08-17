@@ -21,13 +21,14 @@ function num(value) {
 
 function calc(value) {
   if (
-    (r.value == 0 && (Number.isInteger(Number(value)) || value == "-")) ||
+    (r.value === "0" && (Number.isInteger(Number(value)) || value == "-")) ||
     (r.value == Number.POSITIVE_INFINITY ||
       r.value == Number.NEGATIVE_INFINITY ||
       r.value == "NaN")
   ) {
     r.value = value;
   } else {
+    console.log(r.value);
     if (
       (!isValidLastNumber() && !Number.isInteger(Number(value))) ||
       (!isValidLastNumber() && value == 0)
